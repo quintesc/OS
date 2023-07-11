@@ -1,4 +1,4 @@
-# Build by running 'make mysh' or simply 'make'
+# Build by running 'make shelly' or simply 'make'
 # Clean by running 'make clean'
 
 # A couple standard variables:
@@ -8,8 +8,9 @@ CC=gcc
 CFLAGS=-Wall -Werror -g
 
 # Main build command
-mysh: mysh.c
-	$(CC) $(CFLAGS) -o mysh mysh.c
+shelly: shelly.c
+	$(CC) $(CFLAGS) -o shelly shelly.c -I.
+
 
 # .PHONY means this command does not actually produce an output file
 .PHONY: clean
