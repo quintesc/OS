@@ -1,0 +1,28 @@
+../tester/xv6-edit-makefile.sh p2b/Makefile schedtest,loop,test_2,test_3,test_4,test_5,test_6,test_7,test_8,test_9,test_10,test_11,test_12,test_13,test_14,test_15,test_16,test_17,test_18 > p2b/Makefile.test
+
+cp -f tests/test_2.c p2b/test_2.c
+cp -f tests/test_3.c p2b/test_3.c
+cp -f tests/test_4.c p2b/test_4.c
+cp -f tests/test_5.c p2b/test_5.c
+cp -f tests/test_6.c p2b/test_6.c
+cp -f tests/test_7.c p2b/test_7.c
+cp -f tests/test_8.c p2b/test_8.c
+cp -f tests/test_9.c p2b/test_9.c
+cp -f tests/test_10.c p2b/test_10.c
+cp -f tests/test_11.c p2b/test_11.c
+cp -f tests/test_12.c p2b/test_12.c
+cp -f tests/test_13.c p2b/test_13.c
+cp -f tests/test_14.c p2b/test_14.c
+cp -f tests/test_15.c p2b/test_15.c
+cp -f tests/test_16.c p2b/test_16.c
+cp -f tests/test_17.c p2b/test_17.c
+cp -f tests/test_18.c p2b/test_18.c
+
+mv p2b/param.h p2b/param_old.h
+sed -E 's/((^| )FSSIZE)(\t| )*[^ ]*/\3FSSIZE\t2000/' p2b/param_old.h > p2b/param.h
+
+cd p2b
+make -f Makefile.test clean
+make -f Makefile.test xv6.img
+make -f Makefile.test fs.img
+cd ..

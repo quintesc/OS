@@ -1,0 +1,8 @@
+Mon Aug  7 04:39:08 PM CDT 2023
+make: 'psort' is up to date.
+10+0 records in
+10+0 records out
+10000000 bytes (10 MB, 9.5 MiB) copied, 0.905042 s, 11.0 MB/s
+Test 1
+file size: 10000000
+Error opening file: No such file or directory

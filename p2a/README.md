@@ -1,5 +1,5 @@
 # shelly.c
-This is the third project in CS537, in which I had to implement a unix-like shell. Got familiarized with using fork() and exec() to start new processes, as well as getting a loot more experience doing string manipulation in C.
+This is the third project in CS537, in which I had to implement a unix-like shell. Got familiarized with using fork() and exec() to start new processes, as well as getting a lot more experience doing string manipulation in C. 
 
 ## Running
 use `make` then `./shelly`

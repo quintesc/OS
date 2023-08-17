@@ -1,0 +1,8 @@
+Gonna put these new syscalls in sysproc.c
+int mencrypt(char *virtual_addr, int len) -> get args in sysproc.c, call func in vm.c. have to define func in defs.h
+int getpgtable(struct pt_entry* entries, int num)
+int dump_rawphymem(uint physical_addr, char * buffer)
+
+
+
+
